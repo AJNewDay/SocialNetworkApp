@@ -6,11 +6,13 @@ module.exports = {
         first: "Aaron",
         last: "Jordan",
         Age: 33,
+        id: 1,
       },
       {
         first: "Guy",
         last: "McGuy",
         Age: 33,
+        id: 2,
       },
     ]);
   },
@@ -33,6 +35,29 @@ module.exports = {
   },
   // create thoughts
   createThoughts(req, res) {
-    res.json("Thougth was created");
+    res.json("Thought posted");
+  },
+
+  // get friends
+  getFriends(req, res) {
+    res.json([
+      {
+        first: "Friendy",
+        last: "Friend",
+        Age: 33,
+        id: 3,
+      },
+      {
+        first: "Some",
+        last: "Friend",
+        Age: 33,
+        id: 4,
+      },
+    ]);
+  },
+
+  // create users
+  addFriend(req, res) {
+    res.json("You have a new friend");
   },
 };

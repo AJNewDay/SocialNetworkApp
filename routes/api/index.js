@@ -5,6 +5,10 @@ const {
   getSingleUser,
   getThoughts,
   createThoughts,
+  getFriends,
+  addFriend,
+  deleteThought,
+  deleteFriend,
 } = require("../../controllers/api");
 
 // /api/users
@@ -24,5 +28,7 @@ router.route("/thoughts").get(getThoughts).post(createThoughts);
 //   .get(getSingleThought)
 //   .put(updateThought)
 //   .delete(deleteThought);
+
+// router.route("/friends").get(getFriends).post(addFriend);
 
 module.exports = router;
