@@ -29,6 +29,6 @@ router.route("/thoughts").get(getThoughts).post(createThoughts);
 //   .put(updateThought)
 //   .delete(deleteThought);
 
-// router.route("/friends").get(getFriends).post(addFriend);
+router.route("/friends").get(getFriends).post(addFriend);
 
 module.exports = router;

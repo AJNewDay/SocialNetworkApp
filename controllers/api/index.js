@@ -56,7 +56,7 @@ module.exports = {
     ]);
   },
 
-  // create users
+  // add a friend
   addFriend(req, res) {
     res.json("You have a new friend");
   },
