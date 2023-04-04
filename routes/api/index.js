@@ -30,5 +30,6 @@ router.route("/thoughts").get(getThoughts).post(createThoughts);
 //   .delete(deleteThought);
 
 router.route("/friends").get(getFriends).post(addFriend);
-
+router.route("/thoughts").get(getThoughts).delete(deleteThought);
+router.route("/friends").get(getFriends).delete(deleteFriend);
 module.exports = router;
